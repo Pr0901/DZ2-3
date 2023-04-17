@@ -18,8 +18,14 @@
         "type": "object"
       },
       "data": {
-        "type": "string",
-        "pattern": "^Data$"
+        "type": [
+          "number",
+          "string"
+        ],
+        "enum": [
+          "^Data$",
+          "[0-9]{4}"
+        ]
       },
       "files": {
         "type": "object"
