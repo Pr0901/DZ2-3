@@ -21,7 +21,7 @@ class PostmanTest {
 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("Data"))
+                .body("data", equalTo("data"))
                 .body(matchesJsonSchemaInClasspath("postman.shema.json"))
         ;
     }
